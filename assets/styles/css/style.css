@@ -1,0 +1,92 @@
+/* .linkScrollクラスは、スクロール時に上部マージンを設定します */
+.linkScroll {
+    scroll-margin-top: var(--header-height); /* ヘッダーの高さを基準に上部マージンを設定 */
+}
+
+/* .linkScrollPageHeaderクラスは、ページヘッダーのスクロール時に上部マージンを設定します */
+.linkScrollPageHeader {
+  scroll-margin-top: 8rem; /* デフォルトでは8remの上部マージンを設定 */
+}
+
+/* 768px以下の画面サイズの場合、.linkScrollPageHeaderクラスの上部マージンを変更します */
+@media screen and (max-width: 768px) {
+  .linkScrollPageHeader {
+    scroll-margin-top: 4rem; /* モバイルデバイスでは4remの上部マージンを設定 */
+  }
+}
+
+/* .maxWidthクラスは、要素の最大幅を設定します */
+.maxWidth {
+    max-width: 1280px; /* 要素の最大幅を1280pxに制限 */
+}
+
+/* .pageHeaderMarginクラスは、ページヘッダーの上部マージンを設定します */
+.pageHeaderMargin {
+  margin-top: 3.25rem; /* デフォルトでは3.25remの上部マージンを設定 */
+}
+
+/* 768px以下の画面サイズの場合、.pageHeaderMarginクラスの上部マージンを変更します */
+@media screen and (max-width: 768px) {
+  .pageHeaderMargin {
+    margin-top: 0rem; /* モバイルデバイスでは上部マージンを0に設定 */
+  }
+}
+
+/* :rootセレクターは、カスタムプロパティ（CSS変数）を定義します */
+:root {
+  /* tailwindのフォントサイズ */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
+  --font-size-5xl: 3rem;
+  --font-size-6xl: 3.75rem;
+  --font-size-7xl: 4.5rem;
+  --font-size-8xl: 6rem;
+  --font-size-9xl: 8rem;
+
+  /* tailwindの行間 */
+  --font-lineHeight-xs: 1rem;
+  --font-lineHeight-sm: 1.25rem;
+  --font-lineHeight-base: 1.5rem;
+  --font-lineHeight-lg: 1.75rem;
+  --font-lineHeight-xl: 1.75rem;
+  --font-lineHeight-2xl: 2rem;
+  --font-lineHeight-3xl: 2.25rem;
+  --font-lineHeight-4xl: 2.5rem;
+  --font-lineHeight-5xl: 1;
+  --font-lineHeight-6xl: 1;
+  --font-lineHeight-7xl: 1;
+  --font-lineHeight-8xl: 1;
+  --font-lineHeight-9xl: 1;
+
+  /* カスタムカラーの定義 */
+  --custom-color-gray: rgb(105 127 159);
+  --custom-color-lightGray: rgb(156 163 175);
+  --custom-color-deepGray: rgb(65, 96, 144);
+  --custom-color-blue: rgba(0 95 181);
+  --custom-color-deepBlue: rgb(0 10 135);
+  --custom-color-lightBlue: rgba(50 156 255);
+  --custom-color-orange: rgba(229 181 127);
+  --custom-color-lightOrange: rgba(231 198 148);
+  --custom-color-platina: rgba(224 224 224);
+  --cumtom-color-lightIvory: rgb(238 238 238);
+  --cumtom-color-ivory: rgb(204 204 204);
+  --custom-color-gray95: rgb(242 242 242);
+  --custom-color-silver: rgb(196, 196, 198);
+
+  /* マージンの定義 */
+  /* ヘッダーのサイズ */
+  --header-height: 60px;
+
+  /* その他のカスタムプロパティ */
+  --border-color: var(--custom-color-gray);
+  --background-color: white;
+  --arrow-size: 1.5rem;
+  --border-width: 1px;
+  --content-radius: 0.5rem;
+}
